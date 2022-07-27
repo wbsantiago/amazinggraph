@@ -14,7 +14,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    max-width: 1400px;
+    max-width: 1080px;
     margin: auto;
 }
 
@@ -22,7 +22,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px;
+    align-items: center;
+    padding: 40px;
+    margin-top: 25px;
 }
 
 .logo {
@@ -30,6 +32,11 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     
+}
+
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 a {
@@ -47,22 +54,36 @@ section {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .content-website {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 15%;
+    top: 165px;
+    float: left;
+    z-index: 999;
+}
+
+div {
+    position: absolute;
+    top: 180px;
+    left: 45%;
 }
 
 h1 {
     color: var(--gray);
     font-size: 3rem;
     text-align: left;
+    margin-bottom: 1.5rem;
 }
 
 p {
     color: var(--gray);
     font-size: 1.2rem;
+    margin-bottom: 1.8rem;
 }
 
 button {
@@ -72,10 +93,11 @@ button {
     font-size: 1.3rem;
     width: 200px;
     height: 40px;
+    cursor: pointer;
 }
 
 img {
-    max-width: 500px;
+    max-width: 450px;
 }
 
 
